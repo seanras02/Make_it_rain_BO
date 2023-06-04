@@ -20,29 +20,42 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10rem;
+    height: 15rem;
     width: 100vw;
     background: #0000a4;
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
 }
 
 .header--container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50rem;
+    gap: 70rem;
     height: 85%;
     width: 75%;
     background: white;
 }
 
-.header--list{
+.img img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.header--list {
     font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f0f6ff;
-    color: #03031a;
     gap: 50rem;
     height: 10rem;
+}
+
+.header--list > li > a{
+    color: #03031a;
+    
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.header--list > li :hover{
+    text-decoration: underline 0.25rem #03031a;
 }
