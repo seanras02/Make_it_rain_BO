@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <script src="products.js" defer></script>
+    <title>JoJol.com | De JoJo Winkel voor jou!</title>
+    <link rel="shortcut icon" href="img/new_logo.webp">
+</head>
+
+<header>
+
+</header>
+
+<body>
+
+    <section id="js--checkOutWindow" class="checkOut a-popup">
+        <ul class="checkOut__list">
+            <li class="checkOut__listItem">
+                <img src="img/figuren/sf.webp" alt="Figuurtje van de stand Sticky Fingers" class="checkOut__image">
+                <p class="checkOut__title">Sticky Fingers</p>
+                <p id="js--amount-sf" class="checkOut__amount"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="img/figuren/tw_.webp" alt="Figuurtje van de stand The World" class="checkOut__image">
+                <p class="checkOut__title">The World</p>
+                <p id="js--amount-tw_" class="checkOut__amount"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="img/figuren/kq.webp" alt="Figuurtje van de stand Killer Queen" class="checkOut__image">
+                <p class="checkOut__title">Killer Queen</p>
+                <p id="js--amount-kq" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/bucciarati.webp" alt="Figuurtje van bucciarati" class="checkOut__image">
+                <p class="checkOut__title">Bucciarati</p>
+                <p id="js--amount-bu" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/cd.webp" alt="Figuurtje van de stand Crazy Diamond" class="checkOut__image">
+                <p class="checkOut__title">Crazy Diamond</p>
+                <p id="js--amount-cd" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/dio.webp" alt="Figuurtje van Dio" class="checkOut__image">
+                <p class="checkOut__title">Dio</p>
+                <p id="js--amount-di" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/donut.webp" alt="Figuurtje van de stand Abbaccio" class="checkOut__image">
+                <p class="checkOut__title">Abbaccio</p>
+                <p id="js--amount-ab" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/esidisi.webp" alt="Figuurtje van Esidisi" class="checkOut__image">
+                <p class="checkOut__title">Esidisi</p>
+                <p id="js--amount-es" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/ge.webp" alt="Figuurtje van de stand Golden Experience" class="checkOut__image">
+                <p class="checkOut__title">Golden Experience</p>
+                <p id="js--amount-ge" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/joseph.webp" alt="Figuurtje van joseph Joestar" class="checkOut__image">
+                <p class="checkOut__title">Joseph Joestar</p>
+                <p id="js--amount-jj" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/jotaro.webp" alt="Figuurtje van Jotaro Kujo" class="checkOut__image">
+                <p class="checkOut__title">Jotaro Kujo</p>
+                <p id="js--amount-jk" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/plane.webp" alt="Figuurtje van Narancia" class="checkOut__image">
+                <p class="checkOut__title">Narancia</p>
+                <p id="js--amount-na" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/pucci.webp" alt="Figuurtje van Pucci" class="checkOut__image">
+                <p class="checkOut__title">Pucci</p>
+                <p id="js--amount-pu" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/the_hand.webp" alt="Figuurtje van de stand The hand samen met Okuyasu"
+                    class="checkOut__image">
+                <p class="checkOut__title">The Hand</p>
+                <p id="js--amount-th" class="checkOut__amount"></p>
+            </li>
+
+            <li class="checkOut__listItem">
+                <img src="img/figuren/the_world.webp" alt="Figuurtje van de stand The World" class="checkOut__image">
+                <p class="checkOut__title">The World</p>
+                <p id="js--amount-tw" class="checkOut__amount"></p>
+            </li>
+        </ul>
+    </section>
+
+    <article class="modal a-popup" id="js--shoppingModal">
+        ✓ Added to Cart
+    </article>
+
+    <button id="js--checkOutButton" class="shoppingCart">
+        🛒
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+
+
+        <button id="js--terugKnop" class="terug--knop"><a href="index.html">⬅</a></button>
+
+        <ul class="games">
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="img/figuren/sf.webp" alt="Foto van de stand Sticky Fingers"
+                        class="game__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2" `1`>€20</h2>
+                    <h3 class="games__h3">Sticky Fingers</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="sf" class="games__button">Add to Cart</button>
+                </section>
+
+            </li>
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/the_world.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2" `1`>€25</h2>
+                    <h3 class="games__h3">The World</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="tw" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/bucciarati.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€23</h2>
+                    <h3 class="games__h3">Bucciarati</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="bu" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/cd.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2" `1`>€25</h2>
+                    <h3 class="games__h3">Crazy Diamond</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="cd" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/dio.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2" `1`>€25,- EUR</h2>
+                    <h3 class="games__h3">DIO</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="di" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/donut.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2" `1`>€22,99 EUR</h2>
+                    <h3 class="games__h3">Abaccio</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="ab" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/esidisi.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€25 EUR</h2>
+                    <h3 class="games__h3">Esidisi</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="es" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/ge.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€24,99 EUR</h2>
+                    <h3 class="games__h3">Golden Experience</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="ge" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/joseph.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€18,99 EUR</h2>
+                    <h3 class="games__h3">Joseph Joestar</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="jj" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/jotaro.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€25,- EUR</h2>
+                    <h3 class="games__h3">Jotaro Kujo</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="jk" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/plane.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€15,- EUR</h2>
+                    <h3 class="games__h3">Narancia</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="na" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/pucci.webp" alt="Foto van Pucci" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">Pucci</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="pu" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/the_hand.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <s>€24,99 EUR</s>
+                    <h2 class="games__h2">€14,99,- EUR</h2>
+                    <h3 class="games__h3">The Hand</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="th" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/tw_.webp" alt="Foto van de stand The World" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <s>€25,- EUR</s>
+                    <h2 class="games__h2">€20,- EUR</h2>
+                    <h3 class="games__h3">The World</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="tw_" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+
+
+            <li class="games__game games__game--third a-popup">
+                <figure class="game__figure">
+                    <img src="img/figuren/kq.webp" alt="Foto van de stand Killer queen" class="game__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€30,- </h2>
+                    <h3 class="games__h3">Killer Queen</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="kq" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
