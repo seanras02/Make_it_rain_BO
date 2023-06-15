@@ -55,7 +55,7 @@ body{
 }
 
 .checkOut__image{
-    max-height: 100%;
+    max-height: 10rem;
     max-width: 10rem;
     object-fit: contain;
 
@@ -94,8 +94,124 @@ body{
 }
 
 .terug--knop a{
+
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.shoppingCart{
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    background: #0000a4;
+    width: 8rem;
+    height: 8rem;
+    border: none;
+    border-radius: 50%;
+    color: #f6f6f6;
+    font-size: white;
+}
+
+.shoppingCart:hover{
+    cursor: pointer;
+
+}
+
+.shoppingCart__message{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #0000a4;
+    border: 0.2rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkOut{
+    width: 70%;
+    height: 80%;
+    background: var(--game-background-color);
+    padding: 4rem;
+    display: none;
+}
+
+.checkOut__list{    
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(15, 20rem);
+}
+
+.checkOut__listItem{
+    list-style: none;
+    grid-row: span 1 ;
+    border-bottom:0.3rem solid rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.checkOut__image{
+    max-height: 10rem;
+    max-width: 10rem;
+    object-fit: contain;
+
+}
+
+.modal{
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    background: green;
+    position: fixed;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    box-shadow: 0 0 5rem 0 rgba(0,0,0,0.3);
+    color: green;
+    font-size: 130%;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.terug--knop{
+    position: fixed;
+    top: 4rem;
+    left: 4rem;
+    background: #0000a4;
+    width: 8rem;
+    height: 8rem;
+    border: none;
+    border-radius: 50%;
+    color: #f6f6f6;
+    font-size: white;
+}
+
+.terug--knop a{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .shoppingCart{

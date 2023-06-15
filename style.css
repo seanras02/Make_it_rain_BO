@@ -9,6 +9,8 @@
     font-family: 'Konkhmer Sleokchher', cursive;
     text-decoration: none;
     overflow-y: auto; /* Enable vertical scrollbar only when needed */
+    overflow-x: hidden;
+
 }
 
 html{
@@ -21,18 +23,20 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10rem;
-    width: 100vw;
+    height: 20rem;
+    width: 100%;
     background: #0000a4;
     box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
+    flex-direction: column;
+    text-decoration: none;
 }
 
 .header--container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35rem;
-    height: 85%;
+    gap: 50rem;
+    height: 50%;
     width: 75%;
     background: #0000a4;
 }
@@ -48,8 +52,9 @@ header{
     justify-content: center;
     align-items: center;
     background: #f0f6ff;
-    gap: 15rem;
     height: 5rem;
+    width: 100%;
+    gap: 20rem;
 }
 
 .header--list > li > a{
@@ -70,7 +75,8 @@ header{
 
 /* middle */
 main{
-    
+    grid-template-rows:repeat(12, 1fr);
+    grid-template-columns:1fr;
 }
 
 .sec{
@@ -79,28 +85,34 @@ main{
 }
 
 .sec--1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-area: sec1;
+    grid-row: 1/2;
 
-    background: url(img/art.webp);
+
+}
+
+.sec--1 img{
+    position: absolute;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    height: 100%;
     background-size: contain;    
     background-position: center;     
     background-repeat: no-repeat;
 }
 
+
 .sec--1--home{    
     display: flex;
     align-items: center;
-    grid-column: 2/3;
+    justify-content: center;
     font-size: 1.5rem;
     width: 100%;
     height: 100vh;
-
-
 }
 
 .sec--1--text{
-    width: 75%;
+    width: 25%;
     padding: 5rem;
     display: flex;
     flex-direction: column;
@@ -123,9 +135,17 @@ main{
     color:#f0f6ff;
     background: #0000a4;
     border: none;
+    border-radius: 2rem;
+    height: 5rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.sec--1--text button li a{
+    color:#f0f6ff;
+    background: #0000a4;
+    border: none;
     padding: 2rem;
     border-radius: 2rem;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .sec--1--home button:hover{
@@ -134,17 +154,19 @@ main{
 }
 
 .sec--2{
+    grid-area: sec2;
+
+
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     min-height: 100vh;
-    display: grid;
 }
 
 .sec--2--deel--1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40%;
+    gap: 45%;
     padding: 4rem;
     grid-row: 1/2;
 }
@@ -177,7 +199,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 5rem;
     grid-row: 2/3;
 }
 
@@ -191,6 +213,9 @@ main{
 
 
 .sec--3--steps{
+    grid-area: sec3;
+
+
     display: grid;
     grid-template-columns:repeat(5, 1fr) ;
     grid-template-rows:repeat(5, 1fr) ;
@@ -251,6 +276,9 @@ main{
 
 
 .sec--4{
+    grid-area: sec4;
+
+    
     min-height: 100vh;
     display: grid;
     grid-template-columns:repeat(2, 1fr) ;
@@ -290,12 +318,14 @@ main{
 }
 
 .review img{
-    width: 20%;
-    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.5rem;
+    height: 6.5rem;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
+    border: 0.25rem solid black;
+
 }
 
 .arrow{
@@ -409,6 +439,8 @@ main{
 /* bottom */
 
 footer{
+    grid-area: footer;
+
     min-height: 30rem;
     border-top: #e6e6e8 0.1rem solid;
     display: grid;
@@ -449,7 +481,6 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
     padding: 5rem;
 }
 
