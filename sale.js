@@ -1,6 +1,8 @@
 let allGames = document.getElementsByClassName("part");
 let filters = document.getElementsByClassName("filter");
 let section = document.getElementsByClassName("part--section");
+let body = document.getElementsByClassName("part--body");
+let buy = document.getElementsByClassName("part--buy");
 
 
 //hiermee start je altijd boven aan de pagina als je refresht
@@ -21,7 +23,6 @@ for(let i = 0; i < filters.length; i++){
 
 
 //als er op de filter knop gedrukt word ^ gaat de adventure genre weg
-//
 
 //PART 1
 let part1Filter = document.getElementById("part--1");
@@ -32,6 +33,8 @@ part1Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--1"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
+                body[i].style.display = "block";
+                buy[i].style.display = "block";
             }
         }
     }
@@ -40,6 +43,8 @@ part1Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--1"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
+                body[i].style.display = "none";
+                buy[i].style.display = "none";
             }
         }
     }
@@ -54,6 +59,8 @@ part2Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--2"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
+                body[i].style.display = "block";
+                buy[i].style.display = "block";
             }
         }
     }
@@ -62,6 +69,8 @@ part2Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--2"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
+                body[i].style.display = "none";
+                buy[i].style.display = "none";
             }
         }
     }
@@ -76,6 +85,8 @@ part3Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--3"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
+                body[i].style.display = "block";
+                buy[i].style.display = "block";
             }
         }
     }
@@ -84,6 +95,8 @@ part3Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--3"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
+                body[i].style.display = "none";
+                buy[i].style.display = "none";
             }
         }
     }
@@ -99,6 +112,8 @@ part4Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--4"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
+                body[i].style.display = "block";
+                buy[i].style.display = "block";
             }
         }
     }
@@ -107,6 +122,8 @@ part4Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--4"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
+                body[i].style.display = "none";
+                buy[i].style.display = "none";
             }
         }
     }
@@ -121,6 +138,8 @@ part5Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--5"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
+                body[i].style.display = "block";
+                buy[i].style.display = "block";
             }
         }
     }
@@ -129,6 +148,8 @@ part5Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--5"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
+                body[i].style.display = "none";
+                buy[i].style.display = "none";
             }
         }
     }
@@ -144,6 +165,8 @@ part6Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--6"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
+                body[i].style.display = "block";
+                buy[i].style.display = "block";
             }
         }
     }
@@ -152,6 +175,8 @@ part6Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--6"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
+                body[i].style.display = "none";
+                buy[i].style.display = "none";
             }
         }
     }

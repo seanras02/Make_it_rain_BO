@@ -16,76 +16,38 @@ html{
 
 /* top */
 
-header{
+header {
+    background-color: #0000a4;
+    padding: 1.6rem 3.2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 10rem;
-    width: 100vw;
-    background: #0000a4;
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
+    height: 9rem;
 }
-
-.header--container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 35rem;
-    height: 85%;
-    width: 75%;
-    background: #0000a4;
+  
+.logo {
+    width: 6rem;
+    height: 6rem;
 }
-
-.img img{
-    width: 5rem;
-    height: 5rem;
+  
+ul {
+    margin-left: auto;
 }
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20rem;
-    width: 100%;
-    background: #0000a4;
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.2);
-    flex-direction: column;
-    text-decoration: none;
+  
+ul button {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #0000a4;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
 }
-
-.header--container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50rem;
-    height: 50%;
-    width: 75%;
-    background: #0000a4;
-}
-
-.img img{
-    width: 5rem;
-    height: 5rem;
-}
-
-.header--list{
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f6ff;
-    height: 5rem;
-    width: 100%;
-    gap: 20rem;
-}
-
-.header--list > li > a{
-    color: #03031a;
-    border-radius: 2rem;
-}
-
-.header--list > li :hover{
-    text-decoration: underline 0.1rem #03031a;
+  
+:user-invalid button:hover {
+    background-color: #0000a4;
+    color: #fff;
 }
 
 main{
@@ -102,7 +64,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     animation-fill-mode: backwards;
     animation-name: popup;
     animation-duration: 0.2s;
@@ -235,10 +197,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 10rem;
+    gap: 2rem;
     width: 100%;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 
 .inputs > div{
@@ -258,6 +219,7 @@ main{
     appearance: none;
     -webkit-appearance: none;
     background: #eee;
+    border: #03031a  0.25rem solid;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -267,7 +229,8 @@ main{
 }
 
 .filter:checked{
-    background: rgba(0, 0, 0, 0.2);
+    border: #03031a  0.25rem solid;
+    background: #0000a4;
 }
 
 .filter:checked ~ .label{
@@ -281,7 +244,7 @@ main{
     gap: 2rem;
     align-items: center;
     flex-direction: column;
-    
+    width: 100%;
 }
 
 .part--section{
