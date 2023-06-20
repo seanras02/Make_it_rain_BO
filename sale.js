@@ -1,9 +1,8 @@
 let allGames = document.getElementsByClassName("part");
 let filters = document.getElementsByClassName("filter");
 let section = document.getElementsByClassName("part--section");
-let body = document.getElementsByClassName("part--body");
+let middle = document.getElementsByClassName("part--body");
 let buy = document.getElementsByClassName("part--buy");
-
 
 //hiermee start je altijd boven aan de pagina als je refresht
 window.scrollTo(0,0);
@@ -33,8 +32,12 @@ part1Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--1"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
-                body[i].style.display = "block";
-                buy[i].style.display = "block";
+                if(middle[i]){
+                    middle[i].style.display = "block";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "block";
+                }
             }
         }
     }
@@ -43,12 +46,16 @@ part1Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--1"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
-                body[i].style.display = "none";
-                buy[i].style.display = "none";
+                if(middle[i]){
+                    middle[i].style.display = "none";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "none";
+                }
             }
         }
     }
-}
+};
 
 //PART 2
 let part2Filter = document.getElementById("part--2");
@@ -59,8 +66,12 @@ part2Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--2"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
-                body[i].style.display = "block";
-                buy[i].style.display = "block";
+                if(middle[i]){
+                    middle[i].style.display = "block";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "block";
+                }
             }
         }
     }
@@ -69,12 +80,17 @@ part2Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--2"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
-                body[i].style.display = "none";
-                buy[i].style.display = "none";
+                if(middle[i]){
+                    middle[i].style.display = "none";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "none";
+                }
+                
             }
         }
     }
-}
+};
 
 //PART 3
 let part3Filter = document.getElementById("part--3");
@@ -85,8 +101,13 @@ part3Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--3"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
-                body[i].style.display = "block";
-                buy[i].style.display = "block";
+                if(middle[i]){
+                    middle[i].style.display = "block";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "block";
+                }
+                
             }
         }
     }
@@ -95,12 +116,16 @@ part3Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--3"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
-                body[i].style.display = "none";
-                buy[i].style.display = "none";
+                if(middle[i]){
+                    middle[i].style.display = "none";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "none";
+                }
             }
         }
     }
-}
+};
 
 
 //PART 4
@@ -112,8 +137,12 @@ part4Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--4"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
-                body[i].style.display = "block";
-                buy[i].style.display = "block";
+                if(middle[i]){
+                    middle[i].style.display = "block";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "block";
+                }
             }
         }
     }
@@ -122,12 +151,16 @@ part4Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--4"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
-                body[i].style.display = "none";
-                buy[i].style.display = "none";
+                if(middle[i]){
+                    middle[i].style.display = "none";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "none";
+                }
             }
         }
     }
-}
+};
 
 //PART 5
 let part5Filter = document.getElementById("part--5");
@@ -138,8 +171,12 @@ part5Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--5"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
-                body[i].style.display = "block";
-                buy[i].style.display = "block";
+                if(middle[i]){
+                    middle[i].style.display = "block";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "block";
+                }
             }
         }
     }
@@ -148,12 +185,16 @@ part5Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--5"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
-                body[i].style.display = "none";
-                buy[i].style.display = "none";
+                if(middle[i]){
+                    middle[i].style.display = "none";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "none";
+                }
             }
         }
     }
-}
+};
 
 
 // PART 6 
@@ -165,8 +206,12 @@ part6Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--6"){
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
-                body[i].style.display = "block";
-                buy[i].style.display = "block";
+                if(middle[i]){
+                    middle[i].style.display = "block";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "block";
+                }
             }
         }
     }
@@ -175,12 +220,16 @@ part6Filter.onchange = function(){
             if(allGames[i].dataset.category === "part--6"){
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
-                body[i].style.display = "none";
-                buy[i].style.display = "none";
+                if(middle[i]){
+                    middle[i].style.display = "none";
+                }
+                if(typeof buy[i] !== "undefined"){
+                    buy[i].style.display = "none";
+                }
             }
         }
     }
-}
+};
 
 
 

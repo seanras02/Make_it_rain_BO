@@ -79,7 +79,7 @@ main{
 
 .shoppingCart{
     position: fixed;
-    top: 4rem;
+    top: 10rem;
     right: 4rem;
     background: #0000a4;
     width: 8rem;
@@ -149,19 +149,6 @@ main{
 
 .shoppingCart:hover{
     cursor: pointer;
-}
-
-.terug--knop{
-    position: fixed;
-    top: 4rem;
-    left: 4rem;
-    background: #0000a4;
-    width: 8rem;
-    height: 8rem;
-    border: none;
-    border-radius: 50%;
-    color: #f6f6f6;
-    border: solid 0.25rem #e6e6e8;
 }
 
 .a-popup{
