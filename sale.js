@@ -30,13 +30,13 @@ part1Filter.onchange = function(){
     if(part1Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
             if(allGames[i].dataset.category === "part--1"){
-                allGames[i].style.display = "block";
-                section[i].style.display = "block";
+                allGames[i].style.display = "flex";
+                section[i].style.display = "flex";
                 if(middle[i]){
-                    middle[i].style.display = "block";
+                    middle[i].style.display = "flex";
                 }
                 if(typeof buy[i] !== "undefined"){
-                    buy[i].style.display = "block";
+                    buy[i].style.display = "flex";
                 }
             }
         }
@@ -64,13 +64,13 @@ part2Filter.onchange = function(){
     if(part2Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
             if(allGames[i].dataset.category === "part--2"){
-                allGames[i].style.display = "block";
-                section[i].style.display = "block";
+                allGames[i].style.display = "flex";
+                section[i].style.display = "flex";
                 if(middle[i]){
-                    middle[i].style.display = "block";
+                    middle[i].style.display = "flex";
                 }
                 if(typeof buy[i] !== "undefined"){
-                    buy[i].style.display = "block";
+                    buy[i].style.display = "flex";
                 }
             }
         }
@@ -99,13 +99,13 @@ part3Filter.onchange = function(){
     if(part3Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
             if(allGames[i].dataset.category === "part--3"){
-                allGames[i].style.display = "block";
-                section[i].style.display = "block";
+                allGames[i].style.display = "flex";
+                section[i].style.display = "flex";
                 if(middle[i]){
-                    middle[i].style.display = "block";
+                    middle[i].style.display = "flex";
                 }
                 if(typeof buy[i] !== "undefined"){
-                    buy[i].style.display = "block";
+                    buy[i].style.display = "flex";
                 }
                 
             }
@@ -135,13 +135,13 @@ part4Filter.onchange = function(){
     if(part4Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
             if(allGames[i].dataset.category === "part--4"){
-                allGames[i].style.display = "block";
-                section[i].style.display = "block";
+                allGames[i].style.display = "flex";
+                section[i].style.display = "flex";
                 if(middle[i]){
-                    middle[i].style.display = "block";
+                    middle[i].style.display = "flex";
                 }
                 if(typeof buy[i] !== "undefined"){
-                    buy[i].style.display = "block";
+                    buy[i].style.display = "flex";
                 }
             }
         }
@@ -169,13 +169,13 @@ part5Filter.onchange = function(){
     if(part5Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
             if(allGames[i].dataset.category === "part--5"){
-                allGames[i].style.display = "block";
-                section[i].style.display = "block";
+                allGames[i].style.display = "flex";
+                section[i].style.display = "flex";
                 if(middle[i]){
-                    middle[i].style.display = "block";
+                    middle[i].style.display = "flex";
                 }
                 if(typeof buy[i] !== "undefined"){
-                    buy[i].style.display = "block";
+                    buy[i].style.display = "flex";
                 }
             }
         }
@@ -204,13 +204,13 @@ part6Filter.onchange = function(){
     if(part6Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
             if(allGames[i].dataset.category === "part--6"){
-                allGames[i].style.display = "block";
-                section[i].style.display = "block";
+                allGames[i].style.display = "flex";
+                section[i].style.display = "flex";
                 if(middle[i]){
-                    middle[i].style.display = "block";
+                    middle[i].style.display = "flex";
                 }
                 if(typeof buy[i] !== "undefined"){
-                    buy[i].style.display = "block";
+                    buy[i].style.display = "flex";
                 }
             }
         }
@@ -349,8 +349,8 @@ checkOutButton.onclick = function(){
         document.getElementById("js--amount-th").innerHTML = th + "x";
         return;
     }
-        document.querySelector("main .parts").style.display = "block";
-        document.querySelector("main .inputs").style.display = "block";
+        document.querySelector("main .parts").style.display = "flex";
+        document.querySelector("main .inputs").style.display = "flex";
         checkOutWindow.style.display = "none";
         checkOutIsOpen = false;
 }

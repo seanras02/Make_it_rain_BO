@@ -17,39 +17,65 @@ html{
 /* top */
 
 
-header {
+header{
     background-color: #0000a4;
-    padding: 1.6rem 3.2rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     height: 9rem;
-  }
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
-  .logo {
+header h1 a{
+    display: inline-block;
     width: 6rem;
     height: 6rem;
-  }
+}
+
+.logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
   
-  ul {
+nav {
     margin-left: auto;
-  }
-  
-  ul button {
-    padding: 1rem 2rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li{
+    height:4rem;
+    width: 10rem;
     background-color: #fff;
     color: #0000a4;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
     cursor: pointer;
     font-family: Arial, sans-serif;
-  }
-  
-  :user-invalid button:hover {
-    background-color: #0000a4;
-    color: #fff;
-  }
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0000a4;
+    width: 100%;
+    height: 100%;
+}
 
 /* middle */
 main{
@@ -380,46 +406,6 @@ main{
     padding: 2rem;
 }
 
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-        filter: blur(10px);
-    }
-    to{
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-
-@keyframes rainbow{
-    0%{
-        color: red;
-    }
-    14%{
-        color: orange;
-    }
-    28%{
-        color: yellow;
-    }
-    42%{
-        color: green;
-    }
-    57%{
-        color: blue;
-    }
-    71%{
-        color: indigo;
-    }
-    85%{
-        color: violet;
-    }
-    100%{
-        color: red;
-    }
-}
-
-
 /* bottom */
 
 footer{
@@ -471,4 +457,201 @@ footer{
 .contact a{
     color: #03031a;
     text-decoration: underline 0.1rem solid;
+}
+
+
+@media screen and (max-width: 71.875rem) {
+    *{
+        overflow-x: hidden;
+    }
+    header{
+        height: 20rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    header > nav{
+        width: 100%;
+    }
+
+    .sec{
+        min-height: 100%;
+    }
+
+    .sec--1{
+        max-height: 50vh;
+    }
+
+    .sec--1--home{
+        height: 40vh;
+    }
+
+    .sec--1--home img{
+        display: none;
+    }
+
+    .sec--1--text{
+        width: 100%;
+    }
+
+    .sec--1--text h2{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .sec--2{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .sec--2--text{
+        font-size: 1.5rem;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .img__tw{
+        width: 50%;
+    }
+
+    .sec--2--deel--1{
+        max-width: 100%;
+        gap: 2rem;
+    }
+
+    .sec--2--deel--2 img{
+        max-width: 100%;
+        max-height:10rem;
+    }
+
+    .sec--2--deel--2{
+        gap: 0rem;
+    }
+
+    .sec--3--steps{
+        gap: 0;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .step{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .step h2{
+        font-size: 1rem;
+    }
+
+    .step figure{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        padding: 0rem;
+    }
+
+    .step--1, .step--2, .step--3, .step--4{
+        padding: 0rem;
+        width: 15rem;
+    }
+
+    .sec--4{
+        max-height: 100vh;
+        padding-bottom: 10rem;
+    }
+
+    .sec--4--text{
+        font-size: 0.9rem;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    .sec--4 img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .sec--reviews{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec--reviews button{
+        display: none;
+    }
+
+    .review{
+        border: #03031a solid 0.25rem;
+        box-shadow: none;
+    }
+
+    footer{
+        gap: 2rem;
+    }
+
+    .footer--image img{
+        width: 50%;
+    }
+
+    footer .locatie{
+        display: none;
+    }
+
+    .contact--info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        grid-column: 1/3;
+    }
+}
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+@keyframes rainbow{
+    0%{
+        color: red;
+    }
+    14%{
+        color: orange;
+    }
+    28%{
+        color: yellow;
+    }
+    42%{
+        color: green;
+    }
+    57%{
+        color: blue;
+    }
+    71%{
+        color: indigo;
+    }
+    85%{
+        color: violet;
+    }
+    100%{
+        color: red;
+    }
 }

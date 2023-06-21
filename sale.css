@@ -16,40 +16,66 @@ html{
 
 /* top */
 
-header {
+header{
     background-color: #0000a4;
-    padding: 1.6rem 3.2rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     height: 9rem;
 }
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
-.logo {
+header h1 a{
+    display: inline-block;
     width: 6rem;
     height: 6rem;
 }
-  
-ul {
-    margin-left: auto;
+
+.logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+.logo:hover{
+    cursor: pointer;
 }
   
-ul button {
-    padding: 1rem 2rem;
+nav {
+    margin-left: auto;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li{
+    height:4rem;
+    width: 10rem;
     background-color: #fff;
     color: #0000a4;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
     cursor: pointer;
     font-family: Arial, sans-serif;
 }
-  
-:user-invalid button:hover {
-    background-color: #0000a4;
-    color: #fff;
-}
 
+nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0000a4;
+    width: 100%;
+    height: 100%;
+}
+  
 main{
     min-height: 100vh;
     font-size: 2rem;
@@ -180,12 +206,58 @@ main{
     letter-spacing: 0;
 }
 
-.inputs{
+
+.product--page{
+    display: flex;
+    height: 100%;
+    background-color: #007000;
+    padding: 2rem;
+}
+
+.product--page--2{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    right: 8%;
+    width: 50%;
+    height: 50rem;
+    background: red;
+}
+
+.product--page--2 h1{
+    font-size: 8rem;
+}
+
+.product--page--2 .product{
+    font-size: 4rem;
+}
+
+.product--page--2 .product .product--soort{
+    display: flex;
+    outline: none;
+    width: 20rem;
+}
+
+.product--page--1{
+
+}
+
+.product--page--1 img{
+    width: 50rem;
+    height: 50rem;
+}
+
+.product--page--1 p{
+    width: 75%;
+}
+
+.inputs{
+    display: none;
+    /*display: flex;*/
     gap: 2rem;
-    width: 100%;
+    width: 50%;
     margin-bottom: 5rem;
 }
 
@@ -226,7 +298,8 @@ main{
 
 
 .parts{
-    display: flex;
+    display: none;
+    /*display: flex;*/
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
@@ -254,24 +327,31 @@ main{
     cursor: pointer;
 }
 
-.part > img{
+.part > h1{
     display: flex;
     justify-content: center;
     padding: 2rem;
-    width: 25rem;
+    height: 100%;
+    width: 25%;
 }
 
-.part section{
-    flex-direction: column;
+.part h1 a{
+    height: 100%;
+    width: 100%;
+}
+
+.part h1 a img{
+    height: 100%;
+    width: 100%;
 }
 
 .product--body{
     display: flex;
     align-items: center;
     gap: 2rem;
-    width: 100%;
-    height: 100%;
+    width: 50%;
     padding: 2rem;
+    flex-direction: column;
 }
 
 .product--body p{
@@ -279,12 +359,13 @@ main{
 }
 
 .product--buy{
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     gap: 2rem;
+    flex-direction: column;
 }
 
 .cart__button{
@@ -318,24 +399,11 @@ main{
 }
 
 
-
-
-
-
-@keyframes popup{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-
-
 /*footer*/
 
 footer{
+    grid-area: footer;
+
     min-height: 30rem;
     border-top: #e6e6e8 0.1rem solid;
     display: grid;
@@ -376,13 +444,24 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
     padding: 5rem;
 }
 
 .contact a{
     color: #03031a;
     text-decoration: underline 0.1rem solid;
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    
 }
 
 @media screen and (max-width: 62.5rem) {
@@ -436,14 +515,4 @@ footer{
 }
 
 
-@keyframes popup {
-    from{
-        opacity: 0;
-        transform: translateY(2rem);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0); 
-    }
-    
-}
+
