@@ -232,6 +232,35 @@ part6Filter.onchange = function(){
 };
 
 
+//FILTER PRIJS
+
+
+function handleSortOrderChange(){
+    var sortOrder = document.getElementById("js--sortOrder").value;
+    var partsList = document.getElementsByClassName("part--section");
+    var sortedParts = Array.from(partsList);
+
+    sortedParts.sort(function(a,b){
+        var priceA = parseInt(a.querySelector(".product--h2").dataset.prijs);
+        var priceB = parseInt(b.querySelector(".product--h2").dataset.prijs);
+
+        if(sortOrder === "asc"){
+            return priceA - priceB;
+        }else if (sortOrder === "desc"){
+            return priceB - priceA;
+        }
+    });
+    var partsSection = document.querySelector(".parts");
+    partsSection.innerHTML = "";
+
+    sortedParts.forEach(function(part){
+        partsSection.appendChild(part);
+    });
+}
+document.getElementById("js--sortOrder").addEventListener("change", handleSortOrderChange);
+
+
+//FILTER PRIJS
 
 
 //shopping cart
@@ -354,3 +383,14 @@ checkOutButton.onclick = function(){
         checkOutWindow.style.display = "none";
         checkOutIsOpen = false;
 }
+
+
+//SEE MORE
+
+const seeMore = document.querySelector('see--more');
+const description = document.querySelector('.description--hidden');
+
+    seeMore.addEventListener('click', function(){
+        description.classList.toggle('hidden');
+        seeMore.textContent = description.classList.contains('hidden') ? 'Bekijk Meer...' : 'Bekijk Minder...'; 
+});

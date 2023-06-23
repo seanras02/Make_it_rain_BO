@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="buc.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-    <script src="buc.js" defer></script>
+    <script src="sale.js" defer></script>
     <title>JoJol.com | De JoJo Winkel voor jou!</title>
     <link rel="shortcut icon" href="img/new_logo.webp">
 </head>
@@ -30,21 +30,33 @@
 
 
     <main>
-        <section class="container">
-            <article class="product--title">
+        <section class="product--page">
+            <article class="product--page--1">
+                <img src="img/figuren/bucciarati.webp" alt="Foto van het figuurtje van bucciarati">
+                <p>
+                    Maak kennis met de prachtige figuur van Jojo's Bizarre Adventure! 
+                    Met een bescheiden hoogte van 15 cm brengt deze met zorg vervaardigde verzamelitem de levendige personages van de geliefde anime tot leven. 
+                    Met oog voor detail en hoogwaardige kwaliteit is deze figuur een must-have voor elke Jojo-fan. 
+                    Het vangt de essentie van de serie in een klein, maar fascinerend pakketje.
+                </p>
+                <nav>
+                    <ul>
+                        <li id="js--terug--knop--products" class="terug--knop--products">
+                            <h1>Terug</h1>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+
+            <article class="product--page--2">
                 <h1>Bucciarati</h1>
-                <h2>Golden Wind, Part-5</h2>
-            </article>
-
-            <img src="img/figuren/bucciarati.webp" alt="Foto van het figuurtje van bucciarati">
-
-            <article class="product--buy">
-                <h1 class="product--buy--h1">€45,-</h1>
-                <p class="product--buy--p">Thuis binnen 24 uur! </p>
-            </article>
-
-            <article class="product--desc">
-
+                <h2 class="product product--h2">€45,-</h2>
+                <button data-product="bu" class="cart__button">+ 🛒</button>
+                <div class="input">
+                    <input type="checkbox" class="product--soort" id="js--soort">
+                    <input type="checkbox" class="product--soort" id="js--soort">
+                    <input type="checkbox" class="product--soort" id="js--soort">
+                </div>
             </article>
         </section>
     </main>

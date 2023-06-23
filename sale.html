@@ -158,43 +158,8 @@
             <!--SHOPPING CART-->
 
 
-
-            <!--PRODUCT PAGE-->
-            <section class="product--page">
-                <article class="product--page--1">
-                    <img src="img/figuren/bucciarati.webp" alt="Foto van het figuurtje van bucciarati">
-                    <p>
-                        Maak kennis met de prachtige figuur van Jojo's Bizarre Adventure! 
-                        Met een bescheiden hoogte van 15 cm brengt deze met zorg vervaardigde verzamelitem de levendige personages van de geliefde anime tot leven. 
-                        Met oog voor detail en hoogwaardige kwaliteit is deze figuur een must-have voor elke Jojo-fan. 
-                        Het vangt de essentie van de serie in een klein, maar fascinerend pakketje.
-                    </p>
-                    <nav>
-                        <ul>
-                            <li id="js--terug--knop--products" class="terug--knop--products">
-                                <h1>Terug</h1>
-                            </li>
-                        </ul>
-                    </nav>
-                </article>
-
-                <article class="product--page--2">
-                    <h1>Bucciarati</h1>
-                    <h2 class="product product--h2">€45,-</h2>
-                    <button data-product="bu" class="cart__button">+ 🛒</button>
-                    <div class="input">
-                        <input type="checkbox" class="product--soort" id="js--soort">
-                        <input type="checkbox" class="product--soort" id="js--soort">
-                        <input type="checkbox" class="product--soort" id="js--soort">
-                    </div>
-                </article>
-            </section>
-            <!--PRODUCT PAGE-->
-
-
-
             <!--FILTER-->
-            <div class="inputs">
+            <section class="inputs">
                 <ul>
                     <input id="part--1" type="checkbox" class="filter">
                     <label for="part--1" class="label">Part 1</label>
@@ -224,259 +189,289 @@
                     <input id="part--6" type="checkbox" class="filter">
                     <label for="part--6" class="label">Part 6</label>
                 </ul>
-            </div>
+            </section>
             <!--FILTER-->
 
-            <article class="modal a-popup" id="js--shoppingModal">
-                <p class="modal--p">✓ Toegevoegd aan Winkelwagen!</p>
-            </article>
-        
-            <button id="js--checkOutButton" class="shoppingCart">
-                🛒
-                <div class="shoppingCart__message">0</div>
-            </button>
+            <!--Price Filter-->
+            <form action="" class="price--filter">
+                <label for="sortOrder">Sorteren op Prijs: </label>
+                <select id="js--sortOrder">
+                    <option value="asc">Laagste prijs - Hoogste</option>
+                    <option value="desc">Hoogste Prijs - Laagste </option>
+                </select>
+            </form>
+            <!--Price Filter-->
 
 
             <!--PRODUCTS-->
             <ul class="parts">
                 <section class="part--section">
+                    <a href="buc.html">
                     <figure class="part" data-category="part--5">
-                        <h1><a href="buc.html"><img src="img/figuren/bucciarati.webp"alt="figuurtje van bucciarati"></a></h1>
+                    <img src="img/figuren/bucciarati.webp"alt="figuurtje van bucciarati">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Bucciarati</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>
+                                15 cm Bucciarati-figurine uit JoJo's Bizarre Adventure! Gedetailleerd en dynamisch, 
+                                met kenmerkend ritspak. Een must-have voor fans!
+                            </p>
                         </article>
-
-                        <article class="product--buy">
-                            <h2 class="product__h2">€45,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="bu" class="cart__button">+ 🛒</button>
+                        <article>
+                            <h2 class="product product--h2" data-prijs="60">€60,-</h2>
                         </article>
                     </figure>
+                    </a>
                 </section>
 
                 <section class="part--section">
+                    <a href="cd.html">
                     <figure class="part" data-category="part--4">
                         <img src="img/figuren/cd.webp"alt="figuurtje van de stand Crazy Diamond">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Crazy Diamond</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐</div>
+                            <p>Crazy Diamond: een levendige 15 cm JoJo-figuur die de essentie perfect vastlegt. 
+                                Onmisbaar voor fans van JoJo, 
+                                met een tijdloze kwaliteit en uitstraling die blijft fascineren.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€75,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur!</p>
-                            <button data-product="cd" class="cart__button">+ 🛒</button>
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="55">€55,-</h2>
                         </article>
                     </figure>
+                    </a>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--3">
+
                         <img src="img/figuren/dio.webp" alt="figuurtje van DIO">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">DIO</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Maak kennis met DIO, de indrukwekkende 15 cm JoJo-figuur. 
+                                Met nauwgezette aandacht voor details en een magnetische uitstraling, 
+                                een must-have voor elke JoJo-fan.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€60,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="di" class="cart__button">+ 🛒</button>
+
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="65">€65,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--5">
+
                         <img src="img/figuren/donut.webp" alt="figuurtje van Abbaccio">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Abbaccio</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Ontdek Abbaccio, de intrigerende 15 cm JoJo-figuur. 
+                                Met oog voor detail en een unieke uitstraling, 
+                                onmisbaar voor fans van JoJo's Bizarre Adventure.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€99,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="ab" class="cart__button">+ 🛒</button>
+    
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="55">€55,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--2">
+
                         <img src="img/figuren/esidisi.webp"alt="figuurtje van Esidisi">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Esidisi</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Maak kennis met Esidisi, de fascinerende 15 cm JoJo-figuur. 
+                                Met verbluffende details en een imposante aanwezigheid, 
+                                een absolute must-have voor fans van JoJo's Bizarre Adventure.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€45,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="es" class="cart__button">+ 🛒</button>
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="45">€45,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--5">
+
                         <img src="img/figuren/ge.webp"alt="figuurtje van de stand Golden Experience">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Golden Experience</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Ontdek Golden Experience, 
+                                de adembenemende 15 cm JoJo-figuur. 
+                                Met prachtige details en een gouden uitstraling, 
+                                een onmisbare aanwinst voor fans van JoJo's Bizarre Adventure.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€50,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="ge" class="cart__button">+ 🛒</button>
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="75">€75,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--2">
+
                         <img src="img/figuren/joseph.webp"alt="figuurtje van de stand Joseph joestar">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Joseph Joespar</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Maak kennis met Joseph Joestar, 
+                                de legendarische 15 cm JoJo-figuur. 
+                                Met een ongeëvenaarde charme en gedetailleerde vormgeving.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€49,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="jj" class="cart__button">+ 🛒</button> 
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="45">€45,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--3">
+
                         <img src="img/figuren/jotaro.webp"alt="figuurtje van de stand Jotaro Kujo">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Jotaro Kujo</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>
+                                Ontdek Jotaro Kujo, 
+                                de onverschrokken 15 cm JoJo-figuur. 
+                                Met een stoere uitstraling en nauwgezette details, 
+                                een absolute must-have voor elke liefhebber van JoJo's Bizarre Adventure.</p>
                         </article>
-                        <article class="product--buy">
-                            <s class="product__sale">€120,-</s>
-                            <h2 class="product__h2">€100,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="jk" class="cart__button">+ 🛒</button>
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="55">€55,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--4">
+
                         <img src="img/figuren/kq.webp"alt="figuurtje van de stand Killer Queen">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Killer Queen</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Maak kennis met Killer Queen, de angstaanjagende 15 cm JoJo-figuur. 
+                                Met indrukwekkende details en een dodelijke uitstraling, 
+                                een onmisbare toevoeging voor fans van JoJo's Bizarre Adventure.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€89,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="kq" class="cart__button">+ 🛒</button>
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="75">€75,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--5">
+
                         <img src="img/figuren/plane.webp" alt="figuurtje van Narancia">
                         <article class="product--body">
+                            <h1>JoJol.com</h1>
                             <h3 class="product__h3">Narancia</h3>
-                            <p>Klein, 15cm</p>
-                            <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                            <p>Ontdek Narancia, de energieke 15 cm JoJo-figuur.
+                                Met levendige details en een jeugdige uitstraling,
+                                een onmisbaar pronkstuk voor fans van JoJo's Bizarre Adventure.</p>
                         </article>
-                        <article class="product--buy">
-                            <h2 class="product__h2">€65,-</h2>
-                            <p class="product__p">Thuis binnen 24 uur! </p>
-                            <button data-product="na" class="cart__button">+ 🛒</button>
+                        <article class="product--prijs">
+                            <h2 class="product product--h2" data-prijs="45">€45,-</h2>
                         </article>
                     </figure>
                 </section>
 
                 <section class="part--section">
                     <figure class="part" data-category="part--6">
+
                             <img src="img/figuren/pucci.webp" alt="figuurtje van Pucci">
                             <article class="product--body">
+                                <h1>JoJol.com</h1>
                                 <h3 class="product__h3">Pucci</h3>
-                                <p>Klein, 15cm</p>
-                                <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                                <p>
+                                    Maak kennis met Pucci, de intrigerende 15 cm JoJo-figuur. 
+                                    Met zijn mysterieuze uitstraling en verfijnde details, 
+                                    een must-have voor fans van JoJo's Bizarre Adventure.</p>
                             </article>
-                            <article class="product--buy">
-                                <h2 class="product__h2">€80,-</h2>
-                                <p class="product__p">Thuis binnen 24 uur! </p>
-                                <button data-product="pu" class="cart__button">+ 🛒</button>
+                            <article class="product--prijs">
+                                <h2 class="product product--h2" data-prijs="50">€50,-</h2>
                             </article>
+                        </figure>
                 </section>
 
                 <section class="part--section">
                         <figure class="part" data-category="part--5">
+        
                             <img src="img/figuren/sf.webp"alt="figuurtje van de stand sticky fingers">
                             <article class="product--body">
+                                <h1>JoJol.com</h1>
                                 <h3 class="product__h3">Sticky Fingers</h3>
-                                <p>Klein, 15cm</p>
-                                <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                                <p>
+                                    Ontdek Sticky Fingers, 
+                                    de dynamische 15 cm JoJo-figuur. 
+                                    Met zijn kenmerkende ritsen en indrukwekkende details, 
+                                    een onmisbare aanvulling voor elke JoJo-fan.</p>
                             </article>
-                            <article class="product--buy">
-                                <h2 class="product__h2">€75,-</h2>
-                                <p class="product__p">Thuis binnen 24 uur! </p>
-                                <button data-product="sf" class="cart__button">+ 🛒</button>
+                            <article class="product--prijs">
+                                <h2 class="product product--h2" data-prijs="60">€60,-</h2>
                             </article>
                         </figure>
                 </section>
 
                 <section class="part--section">
                         <figure class="part" data-category="part--4">
+        
                             <img src="img/figuren/the_hand.webp"alt="figuurtje van de De Stand The Hand">
                             <article class="product--body">
+                                <h1>JoJol.com</h1>
                                 <h3 class="product__h3">The Hand</h3>
-                                <p>Klein, 15cm</p>
-                                <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                                <p>
+                                    Maak kennis met The Hand, 
+                                    de krachtige 15 cm JoJo-figuur. 
+                                    Met zijn imposante uitstraling en nauwgezette details, 
+                                    een essentieel verzamelitem voor liefhebbers van JoJo's Bizarre Adventure.</p>
                             </article>
-                            <article class="product--buy">
-                                <h2 class="product__h2">€50,-</h2>
-                                <p class="product__p">Thuis binnen 24 uur! </p>
-                                <button data-product="th" class="cart__button">+ 🛒</button>
+                            <article class="product--prijs">
+                                <h2 class="product product--h2" data-prijs="70">€70,-</h2>      
                             </article>
                         </figure>
                 </section>
 
                 <section class="part--section">
                         <figure class="part" data-category="part--3">
+        
                             <img src="img/figuren/the_world.webp"alt="figuurtje van De stand The World">
                             <article class="product--body">
+                                <h1>JoJol.com</h1>
                                 <h3 class="product__h3">The World</h3>
-                                <p>Klein, 15cm</p>
-                                <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                                <p>
+                                    Ontdek The World, de legendarische 15 cm JoJo-figuur. 
+                                    Met zijn iconische pose en indrukwekkende vormgeving, 
+                                    een must-have voor fans die de grenzen van tijd willen overstijgen.
+                                </p>
                             </article>
-                            <article class="product--buy">
-                                <h2 class="product__h2">€75,-</h2>
-                                <p class="product__p">Thuis binnen 24 uur! </p>
-                                <button data-product="tw" class="cart__button">+ 🛒</button>
+                            <article class="product--prijs">
+                                <h2 class="product product--h2" data-prijs="55">€55,-</h2> 
                             </article>
                         </figure>
                 </section>
 
                 <section class="part--section">
                         <figure class="part" data-category="part--3">
+        
                             <img src="img/figuren/tw_.webp"alt="figuurtje van de stand The World - Limited Edition">
                             <article class="product--body">
+                                <h1>JoJol.com</h1>
                                 <h3 class="product__h3">The World - LIMITED EDITION</h3>
-                                <p>Klein, 15cm</p>
-                                <div class="product__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                                <p>
+                                    Maak kennis met The World Limited Edition, 
+                                    Met zijn iconische pose en indrukwekkende vormgeving.
+                                </p>
                             </article>
-                            <article class="product--buy">
-                                <s class="product__sale">€115,-</s>
-                                <h2 class="product__h2">€95,-</h2>
-                                <p class="product__p">Thuis binnen 24 uur! </p>
-                                <button data-product="tw_" class="cart__button">+ 🛒</button>
+                            <article class="product--prijs">
+                                <h2 class="product product--h2" data-prijs="65">€65,-</h2>
                             </article>
                         </figure>
                 </section>
