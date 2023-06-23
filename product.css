@@ -113,11 +113,11 @@ nav ul li a{
 
 }
 
-.checkOut__list{    
+.checkOut__list{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(15, 20rem);
+    grid-template-rows: repeat(3, 20rem);
 }
 
 .checkOut__listItem{
@@ -150,7 +150,9 @@ nav ul li a{
 .modal--p{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 4rem;
+    width: 100%;
 }
 
 .shoppingCart:hover{
@@ -177,6 +179,69 @@ nav ul li a{
 
 
 /*MAIN*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.checkOut__image{
+    max-height: 10rem;
+    max-width: 10rem;
+    object-fit: contain;
+}
+
+.shoppingCart{
+    position: fixed;
+    top: 10rem;
+    right: 4rem;
+    background: #0000a4;
+    width: 15rem;
+    height: 15rem;
+    border: none;
+    border-radius: 50%;
+    color: #f6f6f6;
+    font-size: white;
+    letter-spacing: 0;
+    border: solid 0.25rem #e6e6e8;
+    font-size: 2rem;
+}
+
+.shoppingCart__message{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #0000a4;
+    border: 0.2rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkOut__list{    
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(15, 20rem);
+}
+
+.checkOut__listItem{
+    background: white;
+    list-style: none;
+    grid-row: span 1 ;
+    border-bottom:0.3rem solid rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .product--page{
     display: flex;
     height: 100%;
@@ -201,6 +266,17 @@ nav ul li a{
     font-size: 4rem;
 }
 
+.product--page--2 .product--h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f91906;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 15rem;
+}
+
 .product--page--2 .product .product--soort{
     display: flex;
     outline: none;
@@ -217,14 +293,26 @@ nav ul li a{
 }
 
 .product--page--1 p{
+    padding-bottom: 2rem;
     width: 65%;
 }
 
-.description .hidden{
+.see--more{
+    padding: 0.5rem;
+    border: #0000a4 solid 0.25rem;
+    color: #03031a;
+    background:#fff ;
+}
+
+.description{
+    padding: 4rem;
+}
+
+.description--hidden{
     display: none;
 }
 
-.description.open .hidden{
+.description .open{
     display: block;
 }
 
@@ -270,6 +358,23 @@ nav ul li a{
 
 .product--soort:checked{
     border: #0000a4 solid 0.25rem;
+}
+
+.cart__button{
+    margin: 4rem;
+    border: none;
+    background: #febd00;
+    padding: 1rem;
+    width: 7rem;
+    border-radius: 0.4rem;
+}
+
+.cart__button:hover{
+    cursor: pointer;
+}
+
+.cart__button:active{
+    background: #febe00a1;
 }
 
 /*MAIN*/
@@ -324,4 +429,16 @@ footer{
 .contact a{
     color: #03031a;
     text-decoration: underline 0.1rem solid;
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    
 }

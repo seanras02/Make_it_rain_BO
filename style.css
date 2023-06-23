@@ -191,7 +191,7 @@ main{
     gap: 4rem;
 }
 
-.sec--2--knop{
+.sec--2--knop a{
     cursor: pointer;
     background: #0000a4;
     color: #f0f6ff;

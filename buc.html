@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-    <script src="sale.js" defer></script>
+    <script src="product.js" defer></script>
     <title>JoJol.com | De JoJo Winkel voor jou!</title>
     <link rel="shortcut icon" href="img/new_logo.webp">
 </head>
@@ -30,14 +30,13 @@
 
 
     <main>
-
         <section id="js--checkOutWindow" class="checkOut a-popup">  
             <ul class="checkOut__list">
                 <li class="checkOut__listItem">
                     <img src="img/figuren/bucciarati.webp" alt="figuurtje van bucciarati" class="checkOut__image">
                     <p class="checkOut__title"> Bucciarati </p>
                     <p id="js--amount-bu" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
+                    <p class="checkOut__price">€60,-</p>
                 </li>
 
 
@@ -45,113 +44,12 @@
                     <img src="img/figuren/cd.webp" alt="figuurtje van het stand crazy Diamond" class="checkOut__image">
                     <p class="checkOut__title"> Crazy Diamond </p>
                     <p id="js--amount-cd" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
+                    <p class="checkOut__price">€55,-</p>
                 </li>
-
 
                 <li class="checkOut__listItem">
-                    <img src="img/figuren/dio.webp" alt="figuurtje van DIO" class="checkOut__image">
-                    <p class="checkOut__title"> DIO </p>
-                    <p id="js--amount-di" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
+                    <h1 class="total__cost">Totaal: <span id="js--totaal--prijs"></span></h1>
                 </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/donut.webp" alt="figuurtje van Abbaccio" class="checkOut__image">
-                    <p class="checkOut__title"> Abbaccio </p>
-                    <p id="js--amount-ab" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/esidisi.webp" alt="figuurtje van Esidisi" class="checkOut__image">
-                    <p class="checkOut__title"> Esidisi </p>
-                    <p id="js--amount-es" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/ge.webp" alt="figuurtje van de stand Golden Experience" class="checkOut__image">
-                    <p class="checkOut__title"> Golden Experience </p>
-                    <p id="js--amount-ge" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/joseph.webp" alt="figuurtje van Joseph Joestar" class="checkOut__image">
-                    <p class="checkOut__title"> Joseph Joestar </p>
-                    <p id="js--amount-jj" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/jotaro.webp" alt="figuurtje van Jotaro Kujo" class="checkOut__image">
-                    <p class="checkOut__title"> Jotaro Kujo </p>
-                    <p id="js--amount-jk" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/kq.webp" alt="figuurtje van de stand Killer Queen" class="checkOut__image">
-                    <p class="checkOut__title"> Killer Queen </p>
-                    <p id="js--amount-kq" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/plane.webp" alt="figuurtje van Narancia" class="checkOut__image">
-                    <p class="checkOut__title"> Narancia </p>
-                    <p id="js--amount-na" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/pucci.webp" alt="figuurtje van Pucci" class="checkOut__image">
-                    <p class="checkOut__title"> Pucci </p>
-                    <p id="js--amount-pu" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/sf.webp" alt="figuurtje van het stand Sticky Fingers" class="checkOut__image">
-                    <p class="checkOut__title"> Sticky Fingers </p>
-                    <p id="js--amount-sf" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/the_hand.webp" alt="figuurtje van het stand The Hand" class="checkOut__image">
-                    <p class="checkOut__title"> The Hand </p>
-                    <p id="js--amount-th" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/the_world.webp" alt="figuurtje van het stand The World" class="checkOut__image">
-                    <p class="checkOut__title"> The World </p>
-                    <p id="js--amount-tw" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-
-
-                <li class="checkOut__listItem">
-                    <img src="img/figuren/tw_.webp" alt="figuurtje van het stand The World" class="checkOut__image">
-                    <p class="checkOut__title"> The World </p>
-                    <p id="js--amount-tw_" class="checkOut__amount"></p>
-                    <p class="checkOut__price"></p>
-                </li>
-            </ul>  
         </section>
 
 
@@ -183,7 +81,7 @@
                     
                     Met zijn gedetailleerde afwerking en getrouwe weergave van Bucciarati's ontwerp, is deze 15cm Bucciarati-figurine een fantastische manier om je liefde voor JoJo's Bizarre Adventure te uiten en te koesteren.
                     </p>
-                    <button class="see--more">Bekijk Meer...</button>
+                    <button class="see--more">Toon Meer</button>
                 </section>
 
 
@@ -208,7 +106,7 @@
                     </li>
                 </ul>
 
-                <h2 class="product product--h2">€45,-</h2>
+                <h2 class="product product--h2" data-prijs="60">€60,-</h2>
             </article>
         </section>
     </main>

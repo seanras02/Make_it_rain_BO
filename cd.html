@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-    <script src="sale.js" defer></script>
+    <script src="product.js" defer></script>
     <title>JoJol.com | De JoJo Winkel voor jou!</title>
     <link rel="shortcut icon" href="img/new_logo.webp">
 </head>
@@ -30,33 +30,82 @@
 
 
     <main>
-        <section class="product--page">
-            <article class="product--page--1">
-                <img src="img/figuren/bucciarati.webp" alt="Foto van het figuurtje van bucciarati">
-                <p>
-                    Maak kennis met de prachtige figuur van Jojo's Bizarre Adventure! 
-                    Met een bescheiden hoogte van 15 cm brengt deze met zorg vervaardigde verzamelitem de levendige personages van de geliefde anime tot leven. 
-                    Met oog voor detail en hoogwaardige kwaliteit is deze figuur een must-have voor elke Jojo-fan. 
-                    Het vangt de essentie van de serie in een klein, maar fascinerend pakketje.
-                </p>
-                <nav>
-                    <ul>
-                        <li id="js--terug--knop--products" class="terug--knop--products">
-                            <h1>Terug</h1>
+                <section id="js--checkOutWindow" class="checkOut a-popup">  
+                    <ul class="checkOut__list">
+                        <li class="checkOut__listItem">
+                            <img src="img/figuren/bucciarati.webp" alt="figuurtje van bucciarati" class="checkOut__image">
+                            <p class="checkOut__title"> Bucciarati </p>
+                            <p id="js--amount-bu" class="checkOut__amount"></p>
+                            <p class="checkOut__price">€60,-</p>
+                        </li>
+            
+            
+                        <li class="checkOut__listItem">
+                            <img src="img/figuren/cd.webp" alt="figuurtje van het stand crazy Diamond" class="checkOut__image">
+                            <p class="checkOut__title"> Crazy Diamond </p>
+                            <p id="js--amount-cd" class="checkOut__amount"></p>
+                            <p class="checkOut__price">€55,-</p>
+                        </li>
+
+                        <li class="checkOut__listItem">
+                            <h1 class="total__cost">Totaal: <span id="js--totaal--prijs"></span></h1>
                         </li>
                     </ul>
-                </nav>
+                </section>
+
+
+        <article class="modal a-popup" id="js--shoppingModal">
+            <p class="modal--p">✓ Toegevoegd aan Winkelwagen!</p>
+        </article>
+    
+        <button id="js--checkOutButton" class="shoppingCart">
+            🛒
+            <div class="shoppingCart__message">0</div>
+        </button>
+
+
+
+        <section class="product--page">
+            <article class="product--page--1">
+                <img src="img/figuren/cd.webp" alt="Foto van het figuurtje van bucciarati">
+                <section class="description">
+                    <p>
+                        Deze 15cm Crazy Diamond-figurine is een prachtig eerbetoon aan het krachtige Stand-personage uit "JoJo's Bizarre Adventure: Diamond is Unbreakable". Met oog voor detail en vakmanschap is deze figuur nauwkeurig vervaardigd om de essentie van Crazy Diamond vast te leggen.
+
+                        Crazy Diamond, ook wel bekend als Shining Diamond, is de Stand van Josuke Higashikata. De figurine toont Crazy Diamond in zijn kenmerkende blauwe en witte kleurenschema, met zijn imposante gestalte en spiegelende diamantaccenten.
+                    </p>
+
+                    <p class="description--hidden">
+                        Elk element, van zijn gebeeldhouwde haar tot aan zijn gespierde lichaamsbouw, is zorgvuldig weergegeven om de kracht en uitstraling van Crazy Diamond tot leven te brengen.
+                        
+                        Met een hoogte van 15cm is deze figurine perfect voor verzamelaars en fans van "JoJo's Bizarre Adventure". De gedetailleerde afwerking, levendige kleuren en dynamische pose maken deze figuur een ware eyecatcher. Plaats hem op je bureau, boekenplank of voeg hem toe aan je verzameling om je liefde voor de serie te uiten en te koesteren.
+                    </p>
+                    <button class="see--more">Toon Meer</button>
+                </section>
+
+
+                <button data-product="cd" class="cart__button">+ 🛒</button>
+
             </article>
 
             <article class="product--page--2">
-                <h1>Bucciarati</h1>
-                <h2 class="product product--h2">€45,-</h2>
-                <button data-product="bu" class="cart__button">+ 🛒</button>
-                <div class="input">
-                    <input type="checkbox" class="product--soort" id="js--soort">
-                    <input type="checkbox" class="product--soort" id="js--soort">
-                    <input type="checkbox" class="product--soort" id="js--soort">
-                </div>
+                <h1>Crazy Diamond</h1>
+
+                <ul class="inputs">
+                    <li>
+                        <input type="checkbox" class="product--soort" id="js--soort">
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="product--soort" id="js--soort">
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="product--soort" id="js--soort">
+                    </li>
+                </ul>
+
+                <h2 class="product product--h2" data-prijs="55">€55,-</h2>
             </article>
         </section>
     </main>
