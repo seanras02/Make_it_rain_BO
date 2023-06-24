@@ -32,6 +32,7 @@
     <main>
                 <section id="js--checkOutWindow" class="checkOut a-popup">  
                     <ul class="checkOut__list">
+                        <!--Checkout list-->
                         <li class="checkOut__listItem">
                             <img src="img/figuren/bucciarati.webp" alt="figuurtje van bucciarati" class="checkOut__image">
                             <p class="checkOut__title"> Bucciarati </p>
@@ -48,12 +49,29 @@
                         </li>
 
                         <li class="checkOut__listItem">
+                            <img src="img/figuren/the_world.webp" alt="figuurtje van de stand The World" class="checkOut__image">
+                            <p class="checkOut__title"> Crazy Diamond </p>
+                            <p id="js--amount-cd" class="checkOut__amount"></p>
+                            <p class="checkOut__price">€55,-</p>
+                        </li>
+
+                        <li class="checkOut__listItem">
+                            <img src="img/figuren/ge.webp" alt="figuurtje van de stand Golden Experience" class="checkOut__image">
+                            <p class="checkOut__title"> Golden Experience </p>
+                            <p id="js--amount-ge" class="checkOut__amount"></p>
+                            <p class="checkOut__price">€75,-</p>
+                        </li>
+                        <!--Checkout list-->
+
+                        <!--Totaal prijs-->
+                        <li class="checkOut__listItem">
                             <h1 class="total__cost">Totaal: <span id="js--totaal--prijs"></span></h1>
                         </li>
+                        <!--Totaal prijs-->
                     </ul>
                 </section>
 
-
+    
         <article class="modal a-popup" id="js--shoppingModal">
             <p class="modal--p">✓ Toegevoegd aan Winkelwagen!</p>
         </article>
@@ -66,8 +84,35 @@
 
 
         <section class="product--page">
+
+            <article class="product--page--2">
+                <figure class="page--part--1">
+                    <img src="img/figuren/cd.webp" alt="Foto van het figuurtje van bucciarati">
+                </figure>
+                
+                <section class="page--part--2">
+                    <h1>Crazy Diamond</h1>
+
+                    <ul class="inputs">
+                        <li>
+                            <input type="checkbox" class="product--soort product--cd--1" id="js--soort">
+                        </li>
+
+                        <li>
+                            <input type="checkbox" class="product--soort product--cd--2" id="js--soort">
+                        </li>
+
+                        <li>
+                            <input type="checkbox" class="product--soort product--cd--3" id="js--soort">
+                        </li>
+                    </ul>
+
+                    <h2 class="product product--h2" data-prijs="55">€55,-</h2>
+                </section>
+            </article>
+
+
             <article class="product--page--1">
-                <img src="img/figuren/cd.webp" alt="Foto van het figuurtje van bucciarati">
                 <section class="description">
                     <p>
                         Deze 15cm Crazy Diamond-figurine is een prachtig eerbetoon aan het krachtige Stand-personage uit "JoJo's Bizarre Adventure: Diamond is Unbreakable". Met oog voor detail en vakmanschap is deze figuur nauwkeurig vervaardigd om de essentie van Crazy Diamond vast te leggen.
@@ -86,26 +131,6 @@
 
                 <button data-product="cd" class="cart__button">+ 🛒</button>
 
-            </article>
-
-            <article class="product--page--2">
-                <h1>Crazy Diamond</h1>
-
-                <ul class="inputs">
-                    <li>
-                        <input type="checkbox" class="product--soort" id="js--soort">
-                    </li>
-
-                    <li>
-                        <input type="checkbox" class="product--soort" id="js--soort">
-                    </li>
-
-                    <li>
-                        <input type="checkbox" class="product--soort" id="js--soort">
-                    </li>
-                </ul>
-
-                <h2 class="product product--h2" data-prijs="55">€55,-</h2>
             </article>
         </section>
     </main>

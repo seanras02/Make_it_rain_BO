@@ -343,7 +343,7 @@ footer{
     border: 0;
 }
 
-.contact{
+.contact--info{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,10 +351,14 @@ footer{
     padding: 5rem;
 }
 
-.contact a{
+.contact--info a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #03031a;
     text-decoration: underline 0.1rem solid;
 }
+
 
 @keyframes popup {
     from{

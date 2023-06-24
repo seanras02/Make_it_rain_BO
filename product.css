@@ -110,7 +110,7 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 1rem;
 }
 
 .checkOut__list{
@@ -224,12 +224,6 @@ main{
 
 }
 
-.checkOut__list{    
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(15, 20rem);
-}
 
 .checkOut__listItem{
     background: white;
@@ -244,22 +238,19 @@ main{
 
 .product--page{
     display: flex;
+    flex-direction: column;
     height: 100%;
     padding: 4rem;
 }
 
 .product--page--2{
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    position: absolute;
-    right: 8%;
-    width: 50%;
-    height: 50rem;
+    gap: 10rem;
+    width: 100%;
 }
 
 .product--page--2 h1{
-    font-size: 8rem;
+    font-size: 6rem;
 }
 
 .product--page--2 .product{
@@ -284,12 +275,18 @@ main{
 }
 
 .product--page--1{
-
+    height: 50%;
 }
 
-.product--page--1 img{
-    width: 50rem;
+.page--part--1 img{
+    width: 60rem;
     height: 50rem;
+}
+
+.page--part--2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .product--page--1 p{
@@ -300,8 +297,13 @@ main{
 .see--more{
     padding: 0.5rem;
     border: #0000a4 solid 0.25rem;
-    color: #03031a;
+    color: #0000a4;
     background:#fff ;
+}
+
+.see--more:hover{
+    cursor: pointer;
+    border: #0000a4 solid 0.35rem;
 }
 
 .description{
@@ -349,16 +351,49 @@ main{
     appearance: none;
     -webkit-appearance:none ;
     -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
     border: #03031a solid 0.25rem;
-    background: white;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
 }
-
-.product--soort:checked{
-    border: #0000a4 solid 0.25rem;
+/*BUCCIARATI VARIANTEN*/
+.inputs li .product--buc--1, .product--buc--2, .product--buc--3{
+    background: #0000a4;
 }
+
+.product--buc--1:checked{
+    background: linear-gradient(to left, #757F9A, #D7DDE8);
+}
+
+.product--buc--2:checked{
+    background: linear-gradient(to left, #000000, #74777d);
+}
+
+.product--buc--3:checked{
+    background: linear-gradient(to left, #ebd57e, #D7DDE8);
+}
+
+/*BUCCIARATI VARIANTEN*/
+
+/*CRAZY DIAMOND VARIANTEN*/
+.product--cd--1, .product--cd--2, .product--cd--3{
+    background: #0000a4;
+}
+
+.product--cd--1:checked{
+    background: linear-gradient(to right, #d578e1, #95b7f6);
+}
+
+.product--cd--2:checked{
+    background: linear-gradient(to right, #8ef3a9, #d9d7a9);
+}
+
+.product--cd--3:checked{
+    background: linear-gradient(to right, #ea76ff, pink, #63c7f6);
+}
+/*CRAZY DIAMOND VARIANTEN*/
 
 .cart__button{
     margin: 4rem;
