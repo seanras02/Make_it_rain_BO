@@ -117,7 +117,7 @@ nav ul li a{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(3, 20rem);
+    grid-template-rows: repeat(4, 20rem);
 }
 
 .checkOut__listItem{
@@ -278,9 +278,31 @@ main{
     height: 50%;
 }
 
-.page--part--1 img{
+.page--part--1{
     width: 60rem;
     height: 50rem;
+}
+
+.page--part--1 .page--1--img--1{
+    margin-right: 5rem;
+    width: 50rem;
+    height: 50rem;
+    display: block;
+
+}
+
+.page--1--img--2{
+    margin-right: 5rem;
+    width: 35rem;
+    height: 50rem;
+    display: none;
+}
+
+.page--1--img--3{
+    padding: 4rem;
+    width: 45rem;
+    height: 50rem;
+    display: none;
 }
 
 .page--part--2{
@@ -359,38 +381,55 @@ main{
     border-radius: 50%;
 }
 /*BUCCIARATI VARIANTEN*/
-.inputs li .product--buc--1, .product--buc--2, .product--buc--3{
-    background: #0000a4;
+
+.inputs li .product--buc--1:checked{
+    border:solid 0.4rem #0000a4;
 }
 
-.product--buc--1:checked{
+.inputs li .product--buc--2:checked{
+    border:solid 0.4rem #0000a4;
+}
+
+.inputs li .product--buc--3:checked{
+    border:solid 0.4rem #0000a4;
+}
+
+.product--buc--1{
     background: linear-gradient(to left, #757F9A, #D7DDE8);
 }
 
-.product--buc--2:checked{
+.product--buc--2{
     background: linear-gradient(to left, #000000, #74777d);
 }
 
-.product--buc--3:checked{
+.product--buc--3{
     background: linear-gradient(to left, #ebd57e, #D7DDE8);
 }
 
 /*BUCCIARATI VARIANTEN*/
 
 /*CRAZY DIAMOND VARIANTEN*/
-.product--cd--1, .product--cd--2, .product--cd--3{
-    background: #0000a4;
+.inputs li .product--cd--1:checked{
+    border:solid 0.4rem #0000a4;
 }
 
-.product--cd--1:checked{
+.inputs li .product--cd--2:checked{
+    border:solid 0.4rem #0000a4;
+}
+
+.inputs li .product--cd--3:checked{
+    border:solid 0.4rem #0000a4;
+}
+
+.product--cd--1{
     background: linear-gradient(to right, #d578e1, #95b7f6);
 }
 
-.product--cd--2:checked{
+.product--cd--2{
     background: linear-gradient(to right, #8ef3a9, #d9d7a9);
 }
 
-.product--cd--3:checked{
+.product--cd--3{
     background: linear-gradient(to right, #ea76ff, pink, #63c7f6);
 }
 /*CRAZY DIAMOND VARIANTEN*/

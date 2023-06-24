@@ -8,6 +8,8 @@ let modalIOpen = false;
 
 let bu  = 0;
 let cd  = 0;
+let tw  = 0;
+let ge  = 0;
 let totalPrice = 0;
 
 
@@ -24,6 +26,12 @@ for(let i = 0; i < addToCartButtons.length; i++){
                 bu += 1;
                 totalPrice += 55;
                 break;
+            case "tw":
+                bu += 1;
+            totalPrice += 55;
+            case "ge":
+                bu += 1;
+            totalPrice += 75;
         }
 
         if(modalIOpen === false){
@@ -51,6 +59,8 @@ checkOutButton.onclick = function(){
         //important
         document.getElementById("js--amount-cd").innerHTML = cd + "x";
         document.getElementById("js--amount-bu").innerHTML = bu + "x";
+        document.getElementById("js--amount-tw").innerHTML = tw + "x";
+        document.getElementById("js--amount-ge").innerHTML = ge + "x";
         //important
 
         document.getElementById("js--totaal--prijs").textContent = "€" + totalPrice;
@@ -74,3 +84,17 @@ const description = document.querySelector('.description--hidden');
         description.classList.toggle('open');
         seeMore.textContent = description.classList.contains('open') ? 'Toon Minder' : 'Toon Minder'; 
 });
+
+//IMAGE FILTER
+
+function toggleImage(imageNumber){
+    var images = document.querySelectorAll('.page--1--img');
+
+    for (var i = 0; i < images.length; i++){
+        if (i + 1 === imageNumber){
+            images[i].style.display = 'block';
+        }else{
+            images[i].style.display = 'none';
+        }
+    }
+}

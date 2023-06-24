@@ -37,7 +37,7 @@
                             <img src="img/figuren/bucciarati.webp" alt="figuurtje van bucciarati" class="checkOut__image">
                             <p class="checkOut__title"> Bucciarati </p>
                             <p id="js--amount-bu" class="checkOut__amount"></p>
-                            <p class="checkOut__price">€60,-</p>
+                            <p class="checkOut__price">€55,-</p>
                         </li>
             
             
@@ -45,13 +45,13 @@
                             <img src="img/figuren/cd.webp" alt="figuurtje van het stand crazy Diamond" class="checkOut__image">
                             <p class="checkOut__title"> Crazy Diamond </p>
                             <p id="js--amount-cd" class="checkOut__amount"></p>
-                            <p class="checkOut__price">€55,-</p>
+                            <p class="checkOut__price">€60,-</p>
                         </li>
 
                         <li class="checkOut__listItem">
                             <img src="img/figuren/the_world.webp" alt="figuurtje van de stand The World" class="checkOut__image">
-                            <p class="checkOut__title"> Crazy Diamond </p>
-                            <p id="js--amount-cd" class="checkOut__amount"></p>
+                            <p class="checkOut__title"> The World </p>
+                            <p id="js--amount-tw" class="checkOut__amount"></p>
                             <p class="checkOut__price">€55,-</p>
                         </li>
 
@@ -87,7 +87,9 @@
 
             <article class="product--page--2">
                 <figure class="page--part--1">
-                    <img src="img/figuren/cd.webp" alt="Foto van het figuurtje van bucciarati">
+                    <img src="img/figuren/cd.webp" alt="Foto van het figuurtje van de stand Crazy Diamond" class="page--1--img page--1--img--1">
+                    <img src="img/figuren/cd_2.webp" alt="figuurtje van de stand Crazy Diamond" class="page--1--img page--1--img--2">
+                    <img src="img/figuren/cd_3.webp" alt="figuurtje van de stand Crazy Diamond" class="page--1--img page--1--img--3">
                 </figure>
                 
                 <section class="page--part--2">
@@ -95,15 +97,15 @@
 
                     <ul class="inputs">
                         <li>
-                            <input type="checkbox" class="product--soort product--cd--1" id="js--soort">
+                            <input type="checkbox" class="product--soort product--cd--1" onchange="toggleImage(1)" id="js--soort">
                         </li>
 
                         <li>
-                            <input type="checkbox" class="product--soort product--cd--2" id="js--soort">
+                            <input type="checkbox" class="product--soort product--cd--2" onchange="toggleImage(2)" id="js--soort">
                         </li>
 
                         <li>
-                            <input type="checkbox" class="product--soort product--cd--3" id="js--soort">
+                            <input type="checkbox" class="product--soort product--cd--3" onchange="toggleImage(3)" id="js--soort">
                         </li>
                     </ul>
 

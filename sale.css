@@ -233,6 +233,7 @@ select option{
     /*justify-content:center;*/
     /*align-items:center;*/
     flex-wrap: wrap;
+    flex-grow: 1;
     gap: 2rem;
     align-items: center;
     width: 100%;
@@ -258,7 +259,6 @@ select option{
     align-items: center;
     width: 100%;
     height: 100%;
-    flex-grow: 1;
     background: white;
     flex-direction: column;
     padding: 1rem;
@@ -423,4 +423,122 @@ footer{
 }
 
 
+@media screen and (max-width: 83.4375rem){
+    header{
+        height: 20rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    header > nav{
+        width: 100%;
+    }
+
+    header > nav > ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .inputs{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+
+    #js--sortOrder{
+        width: 50%;
+    }
+
+    .part--section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 35rem;
+    }
+
+    .product--body{
+        height: auto;
+    }
+
+    .product--body h1, .product__h3{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        font-size: 1rem;
+        height: 100%;
+    }
+
+    .part .product--body p{
+        display: none;
+    }
+
+    .product--h2{
+        font-size: 1rem;
+        width: 75%;
+    }
+
+    footer{
+        gap: 2rem;
+    }
+
+    .footer--image img{
+        width: 50%;
+    }
+
+    footer .locatie{
+        display: none;
+    }
+
+    .contact--info{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        grid-column: 1/3;
+    }
+}
+
+
+@media screen and (max-width: 51.5625rem) {
+
+    .inputs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .inputs input{
+        display: none;
+    }
+
+    .label{
+        display:none;
+    }
+
+    .parts{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part--section{
+        width: 100%;
+    }
+
+    .part .product--body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .product--h2{
+        font-size: 2rem;
+        width: 75%;
+    }
+}
 
