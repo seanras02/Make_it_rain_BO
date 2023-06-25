@@ -164,3 +164,54 @@ footer{
     color: #03031a;
     text-decoration: underline 0.1rem solid;
 }
+
+
+@media screen and (max-width: 45.625rem){
+    header{
+        height: 20rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    header > nav{
+        width: 100%;
+    }
+
+    header > nav > ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .image {
+        padding: 2rem;
+    }
+
+    footer{
+        gap: 2rem;
+    }
+
+    .footer--image img{
+        width: 50%;
+    }
+
+    footer .locatie{
+        display: none;
+    }
+
+    .contact--info{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        grid-column: 1/3;
+    }
+}

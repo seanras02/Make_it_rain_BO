@@ -372,57 +372,6 @@ footer{
     
 }
 
-@media screen and (max-width: 62.5rem) {
-    body{
-        padding: 2rem;
-    }
-    main{
-        width: 100%;
-    }
-
-    .games{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50rem 50rem;
-        gap: 1rem;
-    }
-
-    .games__game--third{
-        grid-column: span 1;
-    }
-
-    .modal{
-        width:calc(100% - 2rem);
-    }
-
-    .checkOut{
-        width: 100%;
-    }
-    
-    .checkOut__list{    
-        grid-template-rows: repeat(3, 45rem);
-    
-    }
-    .checkOut__listItem{
-        flex-direction: column;
-        gap: 0.5rem;
-        justify-content: space-between;
-        padding-bottom:2rem;
-    }
-
-    .checkOut__image{
-        height: 40%;
-        width: 100%;
-    }
-
-    .a-popup{
-        animation-name: "broken";
-        animation-duration: 0s;
-    }
-
-}
-
-
 @media screen and (max-width: 83.4375rem){
     header{
         height: 20rem;
