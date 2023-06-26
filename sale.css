@@ -101,7 +101,6 @@ main{
 .modal{
     width: 50rem;
     height: 13rem;
-    background: green;
     position: fixed;
     top: 0%;
     right: 32%;
@@ -170,12 +169,11 @@ select option{
 .product--h2{
     display: flex;
     justify-content: center;
-    align-items: center;
     background: #f91906;
     color: #fff;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    width: 15rem;
+    height: 6rem;
 }
 
 .product--prijs{

@@ -260,10 +260,12 @@ main{
 .product--page--2 .product--h2{
     display: flex;
     justify-content: center;
+    align-items: center;
     background: #f91906;
     color: #fff;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    width: 30%;
 }
 
 .product--page--2 .product .product--soort{
