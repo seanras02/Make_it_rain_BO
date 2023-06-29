@@ -8,7 +8,6 @@
     letter-spacing: 0.25rem;
     font-family: 'Konkhmer Sleokchher', cursive;
     text-decoration: none;
-    overflow-y: auto; /* Enable vertical scrollbar only when needed */
 }
 
 html{
