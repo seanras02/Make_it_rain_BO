@@ -248,6 +248,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     padding: 5rem;
+    background: white;
 }
 
 .contact--info a{
@@ -256,4 +257,45 @@ footer{
     justify-content: center;
     color: #03031a;
     text-decoration: underline 0.1rem solid;
+}
+
+@media screen and (max-width: 32.8125rem) {
+    header{
+        height: 20rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    header > nav{
+        width: 100%;
+    }
+
+    header > nav > ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+    footer{
+        gap: 2rem;
+    }
+
+    .footer--image img{
+        width: 50%;
+    }
+
+    footer .locatie{
+        display: none;
+    }
+
+    .contact--info{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        grid-column: 1/3;
+    }
 }
